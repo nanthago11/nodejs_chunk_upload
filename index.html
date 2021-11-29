@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clear the road</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Chunk Upload</h1>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="name">Marsh ID</label>
+        <input
+          type="text"
+          class="form-control"
+          id="name"
+          name="name"
+          placeholder="Enter ID"
+          required
+        />
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-group" id="form">
+            <label for="target">Target</label>
+            <select class="form-control" id="target" name="target" required>
+              <option value="">Select a target</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-group" id="form">
+            <input type="file" id="file" />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-group" id="form">
+            <button type="submit" class="btn btn-primary" id="submit">
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="info" style="display: none">
+      <pre><span id="info-response"></span></pre>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
